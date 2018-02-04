@@ -7,16 +7,16 @@ The base idea is creating an html output based on the quiz model (including the 
 
 To do so, I've created a `Quiz` model. The model is		uiet simple:
 
-		public class Quiz
+	public class Quiz
+	{
+		public Quiz() { Ranges = new List<SelectionRange>(); }
+		public string Text { get; set; }
+		public List<SelectionRange> Ranges { get; private set; }
+		public string Render()
 		{
-			public Quiz() { Ranges = new List<SelectionRange>(); }
-			public string Text { get; set; }
-			public List<SelectionRange> Ranges { get; private set; }
-			public string Render()
-			{
-				/* rendering logic*/
-			}
-        }
+			/* rendering logic*/
+		}
+	}
 
 For example using following model:
 
