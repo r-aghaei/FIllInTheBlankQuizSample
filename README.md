@@ -3,7 +3,7 @@
 In this example, I've used WebBrowser control to render a friendly Fill in the blank quiz.
 
 
-The base idea is creating an html output based on the quiz model (including the original text and ragnes of blanks) and rendering the model using html and showing it in a `WebBrowser` control.
+The main idea is creating an html output based on the quiz model (including the original text and ragnes of blanks) and rendering the model using html and showing it in a `WebBrowser` control.
 
 To do so, I've created a `Quiz` model. The model is quiet simple:
 
